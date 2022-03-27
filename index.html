@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <header>DojoWeather</header>
+            <div class="cities">
+                <p id="burbankClick">Burbank</p>
+                <p id="chicagoClick">Chicago</p>
+                <p id="dallasClick">Dallas</p>
+            </div>
+        </div>
+        <div class="body">
+            <div class="top">
+                <h1>San Jose</h1>
+                <div class="topRight">
+                    <p>show temperature in</p>
+                    <select name="temp" id="tempSel">
+                        <option>C°</option>
+                        <option>F°</option>
+                    </select>
+                </div>
+            </div>
+            <div class="forecast">
+                <div class="cast">
+                    <h1>Today</h1>
+                    <img src="assets/some_rain.png" alt="Rain Cloud" class="topSpacer">
+                    <p class="topSpacer">some rain</p>
+                    <div class="temps topSpacer">
+                        <p class="high"> <span id="toHigh">24</span>°</p>
+                        <p class="low"><span id="toLow">18</span>°</p>
+                    </div>
+                </div>
+                <div class="cast">
+                    <h1>Tomorrow</h1>
+                    <img src="assets/some_sun.png" alt="Sunny" class="topSpacer">
+                    <p class="topSpacer">some sun</p>
+                    <div class="temps topSpacer">
+                        <p class="high"><span id="tomHigh">27</span>°</p>
+                        <p class="low"><span id="tomLow">19</span>°</p>
+                    </div>
+                </div>
+                <div class="cast">
+                    <h1>Friday</h1>
+                    <img src="assets/some_clouds.png" alt="Cloudy" class="topSpacer">
+                    <p class="topSpacer">some sun</p>
+                    <div class="temps topSpacer">
+                        <p class="high"><span id="friHigh">21</span>°</p>
+                        <p class="low"><span id="friLow">16</span>°</p>
+                    </div>
+                </div>
+                <div class="cast">
+                    <h1>Saturday</h1>
+                    <img src="assets/some_sun.png" alt="Sunny" class="topSpacer">
+                    <p class="topSpacer">some sun</p>
+                    <div class="temps topSpacer">
+                        <p class="high"><span id="satHigh">26</span>°</p>
+                        <p class="low"><span id="satLow">21</span>°</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cookies">
+                <img src="assets/cookie.png" alt="Cookie" class="rightSpacer">
+                <div class="cookieCore rightSpacer">
+                    <h1>Stop! Cookie time</h1>
+                    <p>
+                        We use cookies (sadly not the edible ones) to personalize content
+                        and ads, to provide social media features and to analyse our
+                        traffic. <a href="#">Read more...</a>
+                    </p>
+                </div>
+                <button class="rightSpacer" id="accBtn">I Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
